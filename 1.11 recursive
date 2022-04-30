@@ -7,3 +7,14 @@ function f(n, recursed){
 }
 
 console.log(f(6, false));
+
+alternatively
+
+function f(n, recursed){
+
+    return recursed === undefined
+    ? n
+    :f(n-1) + f(n-2)*2 + f(n-3)*3;
+}
+
+console.log(f(6, false));
