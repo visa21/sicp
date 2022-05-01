@@ -3,7 +3,7 @@ function p(r,c){
     ? 1
     :c === 1
     ? 1
-    :p(r-1,c-1) + p(r-1,c);
+    :p(r-1,c-1) + p(r-1,c); add above and left, add right and above.
 }
 
 p(6,3);
