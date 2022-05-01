@@ -1,0 +1,9 @@
+function p(r,c){
+    return c === r
+    ? 1
+    :c === 1
+    ? 1
+    :p(r-1,c-1) + p(r-1,c);
+}
+
+p(6,3);
