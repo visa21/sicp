@@ -1,11 +1,11 @@
 function f(n){
-    return fIter(n,1,3);
+    return fIter(2, 1, 0, n-2);
 }
 
-function fIter(product,counter,max_count){
-    return counter > max_count
-    ? product + 1
-    :fIter(counter*product-counter,counter+1,max_count);
+function fIter(a, b, c,count){
+    return count === 0
+    ? a
+    :fIter(a+b*2+c*3,a,b,count-1);
 }
 
-f(5);
+console.log(f(4));
